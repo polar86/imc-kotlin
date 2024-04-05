@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">imc</string>
+    <string name="labelTitleFormTest">BMI - TEST</string>
+    <string name="labelEditName">Name</string>
+    <string name="layoutEditWeight">Weight</string>
+    <string name="layoutEditHeight">Height</string>
+</resources>
