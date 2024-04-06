@@ -19,7 +19,7 @@ import androidx.compose.ui.text.input.KeyboardType.Companion.Decimal
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.constraintlayout.compose.ConstraintLayout
-import com.tecmoveis.imc.ImcOperation
+import com.tecmoveis.imc.Bmi
 import com.tecmoveis.imc.R
 import com.tecmoveis.imc.ResultActivity
 
@@ -27,7 +27,7 @@ import com.tecmoveis.imc.ResultActivity
 @Preview(showBackground = true, showSystemUi = true)
 @Composable
 fun MainActivityCompose(){
-    val context = LocalContext.current;
+    val context = LocalContext.current
     ConstraintLayout(modifier = Modifier.fillMaxSize())
     {
         val(textViewTitleForm, layoutEditName, layoutEditWeight, layoutEditHeight, btnCalc) = createRefs()
@@ -91,7 +91,7 @@ fun MainActivityCompose(){
         Button(
             onClick = {
                       isButtonClicked = true
-                      val bmi = ImcOperation(nameValue, weightValue.toFloat(), heightValue.toFloat())
+                      val bmi = Bmi(nameValue, weightValue.toFloat(), heightValue.toFloat())
                       val intent = Intent(context,ResultActivity::class.java)
                       intent.putExtra("value", bmi)
                       context.startActivity(intent)

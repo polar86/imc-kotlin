@@ -3,7 +3,7 @@ package com.tecmoveis.imc
 import android.os.Parcel
 import android.os.Parcelable
 
-class ImcOperation(var name: String?, var height: Float, var weight:Float, var bmi: Float) : Parcelable {
+class Bmi(var name: String?, var height: Float, var weight:Float, var bmi: Float) : Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readString(),
         parcel.readFloat(),
@@ -38,12 +38,12 @@ class ImcOperation(var name: String?, var height: Float, var weight:Float, var b
         dest.writeFloat(bmi)
     }
 
-    companion object CREATOR : Parcelable.Creator<ImcOperation> {
-        override fun createFromParcel(parcel: Parcel): ImcOperation {
-            return ImcOperation(parcel)
+    companion object CREATOR : Parcelable.Creator<Bmi> {
+        override fun createFromParcel(parcel: Parcel): Bmi {
+            return Bmi(parcel)
         }
 
-        override fun newArray(size: Int): Array<ImcOperation?> {
+        override fun newArray(size: Int): Array<Bmi?> {
             return arrayOfNulls(size)
         }
     }
