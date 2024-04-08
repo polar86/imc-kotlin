@@ -1,4 +1,4 @@
-package com.tecmoveis.imc
+package com.tecmoveis.myproject
 
 import org.junit.Test
 

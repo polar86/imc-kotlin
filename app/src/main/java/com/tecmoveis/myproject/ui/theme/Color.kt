@@ -1,4 +1,4 @@
-package com.tecmoveis.imc.ui.theme
+package com.tecmoveis.myproject.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
