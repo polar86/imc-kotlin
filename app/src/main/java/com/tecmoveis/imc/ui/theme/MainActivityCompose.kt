@@ -92,7 +92,7 @@ fun MainActivityCompose(){
             onClick = {
                       isButtonClicked = true
                       val bmi = Bmi(nameValue, weightValue.toFloat(), heightValue.toFloat())
-                      val intent = Intent(context,ResultActivity::class.java)
+                      val intent = Intent(context, ResultActivity::class.java)
                       intent.putExtra("value", bmi)
                       context.startActivity(intent)
             },

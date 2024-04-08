@@ -4,4 +4,6 @@
     <string name="labelEditName">Name</string>
     <string name="layoutEditWeight">Weight</string>
     <string name="layoutEditHeight">Height</string>
+    <string name="TitleResult">BMI - Result</string>
+    <string name="BmiResult">BMI Value:</string>
 </resources>
